@@ -5,6 +5,7 @@ import javafx.geometry.Insets;
 import javafx.geometry.Pos;
 import javafx.scene.layout.BorderPane;
 import javafx.scene.layout.StackPane;
+import ricardob.layout.material.MaterialLayoutHelper;
 import ricardob.layout.material.MaterialNavigationPane;
 
 import java.util.logging.Logger;
@@ -22,6 +23,18 @@ public class MaterialRoot extends StackPane
 
   public MaterialRoot()
   {
+      this.sceneProperty().addListener((observable, oldValue, newValue) -> {
+          if(oldValue != null)
+          {
+              newValue.getStylesheets().remove(MaterialLayoutHelper.getResourcePath("ricardob/layout/material/css/material.css"));
+          }
+          if(newValue != null)
+          {
+              newValue.getStylesheets().add(MaterialLayoutHelper.getResourcePath("ricardob/layout/material/css/material.css"));
+          }
+      });
+
+
     this.getStyleClass().addAll("material", "_root");
 
     rootPane = new BorderPane();
