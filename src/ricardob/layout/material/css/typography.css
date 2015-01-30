@@ -1,0 +1,119 @@
+@font-face {
+  font-family: 'Roboto';
+  font-weight: 100;
+  src: url('../fonts/Roboto-Thin.ttf') format(truetype);
+}
+@font-face {
+  font-family: 'Roboto';
+  font-style: italic;
+  font-weight: 100;
+  src: url("../fonts/Roboto-ThinItalic.ttf") format(truetype);
+}
+@font-face {
+  font-family: 'Roboto';
+  font-weight: 300;
+  src: url("../fonts/Roboto-Light.ttf") format(truetype);
+}
+@font-face {
+  font-family: 'Roboto';
+  font-style: italic;
+  font-weight: 300;
+  src: url("../fonts/Roboto-LightItalic.ttf") format(truetype);
+}
+@font-face {
+  font-family: 'Roboto';
+  src: url("../fonts/Roboto-Regular.ttf") format(truetype);
+}
+@font-face {
+  font-family: 'Roboto';
+  font-style: italic;
+  src: url("../fonts/Roboto-Italic.ttf") format(truetype);
+}
+@font-face {
+  font-family: 'Roboto';
+  font-weight: 500;
+  src: url("../fonts/Roboto-Medium.ttf") format(truetype);
+}
+@font-face {
+  font-family: 'Roboto';
+  font-style: italic;
+  font-weight: 500;
+  src: url("../fonts/Roboto-MediumItalic.ttf") format(truetype);
+}
+@font-face {
+  font-family: 'Roboto';
+  font-weight: 700;
+  src: url("../fonts/Roboto-Bold.ttf") format(truetype);
+}
+@font-face {
+  font-family: 'Roboto';
+  font-style: italic;
+  font-weight: 700;
+  src: url("../fonts/Roboto-BoldItalic.ttf") format(truetype);
+}
+@font-face {
+  font-family: 'Roboto';
+  font-weight: 900;
+  src: url("../fonts/Roboto-Black.ttf") format(truetype);
+}
+@font-face {
+  font-family: 'Roboto';
+  font-style: italic;
+  font-weight: 900;
+  src: url("../fonts/Roboto-BlackItalic.ttf") format(truetype);
+}
+.display4 {
+  -fx-font-family: 'Roboto';
+  -fx-font-weight: 300;
+  -fx-font-size: 112px;
+}
+.display3 {
+  -fx-font-family: 'Roboto';
+  -fx-font-size: 56px;
+}
+.display2 {
+  -fx-font-family: 'Roboto';
+  -fx-font-weight: 300;
+  -fx-font-size: 45px;
+}
+.display1 {
+  -fx-font-family: 'Roboto';
+  -fx-font-weight: 300;
+  -fx-font-size: 34px;
+}
+.headline {
+  -fx-font-family: 'Roboto';
+  -fx-font-size: 24px;
+}
+.title {
+  -fx-font-family: 'Roboto';
+  -fx-font-weight: 500;
+  -fx-font-size: 20px;
+}
+.subhead {
+  -fx-font-family: 'Roboto';
+  -fx-font-size: 16px;
+}
+.body1 {
+  -fx-font-family: 'Roboto';
+  -fx-font-weight: 500;
+  -fx-font-size: 14px;
+}
+.body2 {
+  -fx-font-family: 'Roboto';
+  -fx-font-size: 14px;
+}
+.caption {
+  -fx-font-family: 'Roboto';
+  -fx-font-size: 12px;
+}
+.menu {
+  -fx-font-family: 'Roboto';
+  -fx-font-weight: 500;
+  -fx-font-size: 14px;
+}
+.button {
+  -fx-font-family: 'Roboto';
+  -fx-font-weight: 500;
+  -fx-font-size: 14px;
+}

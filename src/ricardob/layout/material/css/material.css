@@ -1,0 +1,296 @@
+@font-face {
+  font-family: 'Roboto';
+  font-weight: 100;
+  src: url('../fonts/Roboto-Thin.ttf') format(truetype);
+}
+@font-face {
+  font-family: 'Roboto';
+  font-style: italic;
+  font-weight: 100;
+  src: url("../fonts/Roboto-ThinItalic.ttf") format(truetype);
+}
+@font-face {
+  font-family: 'Roboto';
+  font-weight: 300;
+  src: url("../fonts/Roboto-Light.ttf") format(truetype);
+}
+@font-face {
+  font-family: 'Roboto';
+  font-style: italic;
+  font-weight: 300;
+  src: url("../fonts/Roboto-LightItalic.ttf") format(truetype);
+}
+@font-face {
+  font-family: 'Roboto';
+  src: url("../fonts/Roboto-Regular.ttf") format(truetype);
+}
+@font-face {
+  font-family: 'Roboto';
+  font-style: italic;
+  src: url("../fonts/Roboto-Italic.ttf") format(truetype);
+}
+@font-face {
+  font-family: 'Roboto';
+  font-weight: 500;
+  src: url("../fonts/Roboto-Medium.ttf") format(truetype);
+}
+@font-face {
+  font-family: 'Roboto';
+  font-style: italic;
+  font-weight: 500;
+  src: url("../fonts/Roboto-MediumItalic.ttf") format(truetype);
+}
+@font-face {
+  font-family: 'Roboto';
+  font-weight: 700;
+  src: url("../fonts/Roboto-Bold.ttf") format(truetype);
+}
+@font-face {
+  font-family: 'Roboto';
+  font-style: italic;
+  font-weight: 700;
+  src: url("../fonts/Roboto-BoldItalic.ttf") format(truetype);
+}
+@font-face {
+  font-family: 'Roboto';
+  font-weight: 900;
+  src: url("../fonts/Roboto-Black.ttf") format(truetype);
+}
+@font-face {
+  font-family: 'Roboto';
+  font-style: italic;
+  font-weight: 900;
+  src: url("../fonts/Roboto-BlackItalic.ttf") format(truetype);
+}
+.display4 {
+  -fx-font-family: 'Roboto';
+  -fx-font-weight: 300;
+  -fx-font-size: 112px;
+}
+.display3 {
+  -fx-font-family: 'Roboto';
+  -fx-font-size: 56px;
+}
+.display2 {
+  -fx-font-family: 'Roboto';
+  -fx-font-weight: 300;
+  -fx-font-size: 45px;
+}
+.display1 {
+  -fx-font-family: 'Roboto';
+  -fx-font-weight: 300;
+  -fx-font-size: 34px;
+}
+.headline {
+  -fx-font-family: 'Roboto';
+  -fx-font-size: 24px;
+}
+.title {
+  -fx-font-family: 'Roboto';
+  -fx-font-weight: 500;
+  -fx-font-size: 20px;
+}
+.subhead {
+  -fx-font-family: 'Roboto';
+  -fx-font-size: 16px;
+}
+.body1 {
+  -fx-font-family: 'Roboto';
+  -fx-font-weight: 500;
+  -fx-font-size: 14px;
+}
+.body2 {
+  -fx-font-family: 'Roboto';
+  -fx-font-size: 14px;
+}
+.caption {
+  -fx-font-family: 'Roboto';
+  -fx-font-size: 12px;
+}
+.menu {
+  -fx-font-family: 'Roboto';
+  -fx-font-weight: 500;
+  -fx-font-size: 14px;
+}
+.button {
+  -fx-font-family: 'Roboto';
+  -fx-font-weight: 500;
+  -fx-font-size: 14px;
+}
+.z-index-1 {
+  -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.1), 1, 0.1, 2, 2);
+}
+.z-index-2 {
+  -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.2), 10, 0.3, 1, 5);
+}
+.z-index-4 {
+  -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.6), 20, 0.2, 1, 5);
+}
+.root.light-theme {
+  -fx-background-color: #fafafa;
+  -fx-text-fill: #000000;
+}
+.root.dark-theme {
+  -fx-background-color: #333333;
+  -fx-text-fill: #ffffff;
+}
+.navigation {
+  -fx-max-width: 300px;
+  -fx-background-color: #fafafa;
+  -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.1), 1, 0.1, 2, 2);
+}
+.navigation .item {
+  -fx-pref-height: 48px;
+  -fx-background-radius: 0;
+  -fx-max-width: inherit;
+  -fx-fill-width: true;
+  -fx-alignment: center-left;
+}
+.navigation .item:hover {
+  -fx-background-color: #999999;
+}
+.navigation .item:pressed {
+  -fx-background-color: #999999;
+  -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.1), 1, 0.1, 2, 2);
+}
+.navigation .item:disabled {
+  -fx-text-fill: rgba(0, 0, 0, 0.26);
+}
+.navigation .separator {
+  -fx-max-width: inherit;
+  -fx-fill-width: true;
+  -fx-min-height: 17px;
+  -fx-max-height: 17px;
+  -fx-background-insets: 8 0 8 0;
+  -fx-background-color: #dcdcdc;
+}
+.light-theme .scroll-pane {
+  -fx-background-color: #fafafa;
+}
+.light-theme .scroll-pane > * {
+  -fx-background-color: #fafafa;
+}
+.dark-theme .scroll-pane {
+  -fx-background-color: #333333;
+}
+.dark-theme .scroll-pane > * {
+  -fx-background-color: #333333;
+}
+.scroll-pane .corner {
+  -fx-background-color: transparent;
+}
+.scroll-pane .scroll-bar {
+  -fx-background-color: transparent;
+}
+.scroll-pane .scroll-bar .increment-button,
+.scroll-pane .scroll-bar .decrement-button {
+  -fx-background-color: transparent;
+  -fx-background-radius: 2em;
+}
+.scroll-pane .scroll-bar .track {
+  -fx-background-color: transparent;
+  -fx-border-color: transparent;
+  -fx-background-radius: 2em;
+  -fx-border-radius: 2em;
+}
+.scroll-pane .scroll-bar .thumb {
+  -fx-background-color: transparent;
+  -fx-background-insets: 2, 0, 0;
+  -fx-background-radius: 2em;
+}
+.scroll-pane .scroll-bar:hover .thumb {
+  -fx-background-color: #c8c8c8;
+}
+.scroll-pane .scroll-bar:pressed .thumb {
+  -fx-background-color: #999999;
+}
+.light-theme .check-box {
+  -fx-text-fill: #000000;
+}
+.dark-theme .check-box {
+  -fx-text-fill: #ffffff;
+}
+.check-box .box {
+  -fx-border-color: null;
+  -fx-shape: "M19 5v14H5V5h14m0-2H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2z";
+}
+.light-theme .check-box .box {
+  -fx-background-color: rgba(0, 0, 0, 0.54);
+}
+.dark-theme .check-box .box {
+  -fx-background-color: rgba(255, 255, 255, 0.7);
+}
+.check-box .box .mark {
+  -fx-shape: null;
+}
+.check-box:selected .box {
+  -fx-shape: "M19 3H5c-1.11 0-2 .9-2 2v14c0 1.1.89 2 2 2h14c1.11 0 2-.9 2-2V5c0-1.1-.89-2-2-2zm-9 14l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z";
+}
+.light-theme .check-box:selected .box {
+  -fx-background-color: #009688;
+}
+.dark-theme .check-box:selected .box {
+  -fx-background-color: #009688;
+}
+.check-box:selected .mark {
+  -fx-border-color: null;
+  -fx-background-color: null;
+  -fx-shape: null;
+}
+.log .warning {
+  -fx-fill: orange;
+}
+.root .actionbar {
+  -fx-background-color: #ff5722;
+  -fx-max-height: 64px;
+  -fx-padding: 0 8 0 8;
+  -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.18), 5, 0, 0, 4);
+}
+.root .actionbar .title {
+  -fx-text-fill: #fafafa;
+  -fx-font-smoothing-type: gray;
+}
+.root .actionbar .button {
+  -fx-max-height: 24px;
+  -fx-max-width: 24px;
+  -fx-border-color: transparent;
+  -fx-background-color: transparent;
+}
+.root .actionbar .button:hover {
+  -fx-background-color: #ff6a3c;
+  -fx-background-radius: 2px;
+}
+.overlay-pane {
+  -fx-background-color: black;
+}
+.button {
+  -fx-border-color: transparent;
+  -fx-background-color: transparent;
+  -fx-background-radius: 2px;
+}
+.button.flat {
+  -fx-min-width: 88px;
+  -fx-max-height: 36px;
+}
+.button.flat:hover {
+  -fx-background-color: #999999;
+}
+.button.flat:pressed {
+  -fx-background-color: #999999;
+  -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.1), 1, 0.1, 2, 2);
+}
+.button.flat:disabled {
+  -fx-text-fill: rgba(0, 0, 0, 0.26);
+}
+.button.raised {
+  -fx-min-width: 88px;
+  -fx-max-height: 36px;
+  -fx-background-color: #c8c8c8;
+  -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.1), 1, 0.1, 2, 2);
+}
+.button.raised:pressed {
+  -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.2), 10, 0.3, 1, 5);
+}
+.glyphicon {
+  fx-font-family: 'GLYPHICONS Halflings Regular';
+}
