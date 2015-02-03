@@ -1,12 +1,15 @@
-@light: #EEEEEE;
-@dark: #333333;
+@import "variables";
+@import "typography";
 
-@color-500: #009688;
+@light: @grey-200;
+@dark: @bluegrey-900;
+
+@theme-color-300: @deeppurple-300;
+@theme-color-400: @deeppurple-400;
+@theme-color: @deeppurple-500;
 
 @light-background: #FAFAFA;
 @light-background-darker: #DCDCDC;
-
-@import "typography";
 
 //===== MIXINS START ======
 
@@ -43,9 +46,7 @@
 
 .navigation
 {
-
-
-  -fx-max-width: 300px; //HARDCODED
+  -fx-max-width: 350px;
   -fx-background-color: @light-background;
   .z-index-1;
 
@@ -193,11 +194,11 @@
       -fx-shape: "M19 3H5c-1.11 0-2 .9-2 2v14c0 1.1.89 2 2 2h14c1.11 0 2-.9 2-2V5c0-1.1-.89-2-2-2zm-9 14l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z";
       .light-theme &
       {
-        -fx-background-color: @color-500;
+        -fx-background-color: @theme-color;
       }
       .dark-theme &
       {
-        -fx-background-color: @color-500;
+        -fx-background-color: @theme-color;
       }
     }
 
@@ -222,7 +223,7 @@
 &.root {
 
   .actionbar {
-    -fx-background-color: #ff5722;
+    -fx-background-color: @theme-color;
     -fx-max-height: 64px;
     -fx-padding: 0 8 0 8;
     -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.18), 5, 0, 0, 4);
@@ -240,14 +241,14 @@
       -fx-background-color: transparent;
 
       &:hover {
-        -fx-background-color: lighten(#ff5722, 5%);
+        -fx-background-color: @theme-color-400;
         -fx-background-radius: 2px;
       }
     }
   }
 }
 
-  &.overlay-pane
+&.overlay-mask
   {
     -fx-background-color: black;
   }
