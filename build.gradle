@@ -15,6 +15,20 @@ sourceSets {
     }
 }
 
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    compile('org.controlsfx:controlsfx:8.20.8') {
+        transitive = true
+    }
+}
+
+jar {
+    from configurations.compile.collect { it.isDirectory() ? it : zipTree(it) }
+}
+
 task devbuild {
     new File("resources/build.info").write(new SimpleDateFormat("ddMMyyyhhmm").format(new Date()))
     version = ""
