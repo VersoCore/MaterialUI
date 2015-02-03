@@ -1,0 +1,23 @@
+import java.text.SimpleDateFormat
+
+apply plugin: 'java'
+
+version = 'a0'
+
+sourceSets {
+    main {
+        java {
+            srcDir 'src'
+        }
+        resources {
+            srcDir 'resources'
+        }
+    }
+}
+
+task devbuild {
+    new File("resources/build.info").write(new SimpleDateFormat("ddMMyyyhhmm").format(new Date()))
+    version = ""
+}
+
+devbuild.finalizedBy build
