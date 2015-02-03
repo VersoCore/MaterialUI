@@ -5,6 +5,7 @@ import javafx.geometry.Insets;
 import javafx.geometry.Pos;
 import javafx.scene.control.Label;
 import javafx.scene.layout.HBox;
+import ricardob.layout.material.components.control.MaterialActionBarButton;
 
 public class MaterialActionBar extends HBox
 {
@@ -21,17 +22,7 @@ public class MaterialActionBar extends HBox
   public MaterialActionBar(MaterialRoot root)
   {
     this.root = root;
-    this.getStyleClass().addAll("actionbar");
-
-//    show = new Timeline();
-//    final KeyValue positionKeyValueS = new KeyValue(this.translateYProperty(), 0, PhysicsSimulator.instance.getLayoutHelper().SWIFT_INTERPOLATOR_IN_OUT);
-//    final KeyFrame positionKeyFrameS = new KeyFrame(Duration.millis(500), positionKeyValueS);
-//    show.getKeyFrames().add(positionKeyFrameS);
-//
-//    hide = new Timeline();
-//    final KeyValue positionKeyValueH = new KeyValue(this.translateYProperty(), -64, PhysicsSimulator.instance.getLayoutHelper().SWIFT_INTERPOLATOR_IN_OUT);
-//    final KeyFrame positionKeyFrameH = new KeyFrame(Duration.millis(500), positionKeyValueH);
-//    hide.getKeyFrames().add(positionKeyFrameH);
+      this.getStyleClass().add("actionbar");
 
     navigationMenu = new MaterialActionBarButton("ricardob/layout/material/icons/hamburger.png");
     this.setAlignment(Pos.CENTER_LEFT);
@@ -40,7 +31,7 @@ public class MaterialActionBar extends HBox
     this.getChildren().add(navigationMenu);
 
     title = new Label();
-    title.getStyleClass().addAll("title");
+      title.getStyleClass().add("title");
 
     titleListener = (observable, oldValue, newValue) -> title.setText(newValue);
 
