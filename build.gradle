@@ -29,9 +29,24 @@ jar {
     from configurations.compile.collect { it.isDirectory() ? it : zipTree(it) }
 }
 
-task devbuild {
-    new File("resources/build.info").write(new SimpleDateFormat("ddMMyyyhhmm").format(new Date()))
-    version = ""
+tasks.withType(Jar).all { Jar jar ->
+    jar.doFirst {
+        String jarType = jar.extension
+        if (jar.classifier) jarType = jar.classifier
+        String fileName = "materialUI.build"
+        ant.propertyfile(file: "${jar.temporaryDir}/${fileName}") {
+            entry(key: "PROJECT_VERSION", value: project.version)
+            entry(key: "PROJECT_BUILD_DATE", value: new SimpleDateFormat("ddMMyyyyhhmm").format(new Date()))
+        }
+        String intoPath = "ricardob/layout/material"
+        jar.from(jar.temporaryDir) {
+            include fileName
+            if (jar instanceof War) intoPath = "WEB-INF/classes/${intoPath}"
+            into(intoPath)
+        }
+    }
 }
 
-devbuild.finalizedBy build
+processResources << {
+    new File("build/resources/build.info").write(new SimpleDateFormat("ddMMyyyhhmm").format(new Date()))
+}
